@@ -18,7 +18,7 @@ class FineChart(models.Model):
         return self.fine_name
 
 class BankMony(models.Model):
-    total_mony = models.IntegerField() 
+    total_mony = models.IntegerField(default=0) 
 
     def __str__(self):
         return f"Total Money: {self.total_mony}"
